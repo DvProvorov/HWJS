@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="name.css">
+    <title>Введення імені користувача</title>
+</head>
+
+<body>
+    <div class="user">
+        <h2>Введіть ваше ім'я:(не має містити цифри)</h2>
+        <input class="input" type="text" id="username" oninput="validateInput(this)">
+
+        <script>
+            function validateInput(input) {
+
+                let inputValue = input.value;
+
+        
+                let sanitizedValue = '';
+                for (var i = 0; i < inputValue.length; i++) {
+                
+                    if (isNaN(inputValue[i])) {
+                    
+                        sanitizedValue += inputValue[i];
+                    }
+                }
+
+                input.value = sanitizedValue;
+            }
+        </script>
+    </div>
+</body>
+
+</html>

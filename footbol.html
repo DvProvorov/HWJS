@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="footbol.css">
+    <title>Футбольне поле</title>
+
+</head>
+
+<body>
+    <div id="field" onclick="moveBall(event)">
+        <div class="rectangle">
+            <div class="penaltyleft">
+                <div class="gateleft"></div>
+            </div>
+            <div class="penaltyright">
+                <div class="gateright"></div>
+            </div>
+        </div>
+        <div class="line">
+            <div class="ring"></div>
+        </div>
+        <div id="ball"></div>
+    </div>
+
+    <script>
+        function moveBall(event) {
+            let ball = document.getElementById('ball');
+            let field = document.getElementById('field');
+            let x = event.clientX - field.offsetLeft;
+            let y = event.clientY - field.offsetTop;
+            let fieldWidth = field.clientWidth;
+            let fieldHeight = field.clientHeight;
+            let ballWidth = ball.offsetWidth;
+            let ballHeight = ball.offsetHeight;
+            let newX = x - ballWidth / 2;
+            let newY = y - ballHeight / 2;
+            newX = Math.max(0, Math.min(newX, fieldWidth - ballWidth));
+            newY = Math.max(0, Math.min(newY, fieldHeight - ballHeight));
+            ball.style.transform = 'translate(' + newX + 'px, ' + newY + 'px)';
+        }
+    </script>
+</body>
+
+</html>

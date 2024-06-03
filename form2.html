@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-end">
+            <div class="col-auto">
+                <span id="greeting"></span>
+            </div>
+            <div class="col-auto">
+                <a href="#" onclick="removeCookies()">exit</a>
+            </div>
+        </div>
+        <hr>
+        <h3>User info</h3>
+        <form method="get" onsubmit="return false">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <div class="head">
+                        <label for="firstInp" class="form-label">First name:</label>
+                        <div id="firstInpVal" class="validtext"></div>
+                    </div>
+                    <input type="text" class="form-control" id="firstInp" placeholder="" name="Fnames">
+                </div>
+                <div class="col-md-6">
+                    <div class="head">
+                        <label for="lastInp" class="form-label">Last name:</label>
+                        <div id="lastInpVal" class="validtext"></div>
+                    </div>
+                    <input type="text" class="form-control" id="lastInp" placeholder="" name="Lname">
+                </div>
+                <div class="col-md-6">
+                    <div class="head">
+                        <label for="yearInp" class="form-label">Year of birth:</label>
+                        <div id="yearInpVal" class="validtext"></div>
+                    </div>
+                    <input type="text" class="form-control" id="yearInp" placeholder="" name="Ybirth">
+                </div>
+                <div class="col-md-6">
+                    <div id="confpasswInpVal" class="validtext"></div>
+                    <label for="passwordInp" class="form-label">Gender:</label>
+                    <select class="form-select" aria-label="Gender">
+                        <option value="1">male</option>
+                        <option value="2">female</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <div class="head">
+                        <label for="phoneInp" class="form-label">Phone number:</label>
+                        <div id="phoneInpVal" class="validtext"></div>
+                    </div>
+                    <input type="text" class="form-control" id="phoneInp" placeholder="" name="Pnumber">
+                </div>
+                <div class="col-md-6">
+                    <div class="head">
+                        <label for="skypeInp" class="form-label">Skype:</label>
+                        <div id="skypeInpVal" class="validtext"></div>
+                    </div>
+                    <input type="text" class="form-control" id="skypeInp" placeholder="" name="Skype">
+                </div>
+            </div>
+            <input type="submit" value="Save" class="mb-3" onclick="checkForm(event)">
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="form2.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+.inputform {
+    display: flex;
+    width: 50%;
+    margin: 40px;
+    border: 1px solid black;
+    background-color: bisque;
+    justify-content: center;
+}
+
+.dataform {
+    text-align: left;
+}
+
+button {
+    margin: 10px;
+    height: 80%;
+}
+
+.error {
+    color: red;
+}
+
+.dataform textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+}

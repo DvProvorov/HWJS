@@ -1,0 +1,21 @@
+body {
+    background-color: #f5e1b9;
+}
+
+.name {
+    display: flex;
+}
+
+.input {
+    display: flex;
+}
+
+.comment {
+    width: 90%;
+    height: 200px;
+    background-color: #c21515;
+}
+
+button {
+    width: 90%;
+}

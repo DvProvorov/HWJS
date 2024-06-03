@@ -1,0 +1,12 @@
+.user {
+    width: 500px;
+    height: 100px;
+    background-color: rgb(246, 212, 117);
+    text-align: center;
+    padding: 20px;
+}
+
+.input {
+    width: 100%;
+
+}

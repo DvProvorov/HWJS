@@ -1,0 +1,30 @@
+.container {
+    background-color: #f2e6dd;
+}
+
+h3 {
+    text-align: center;
+}
+
+input {
+    width: 60%;
+    text-align: center;
+}
+
+#validtext {
+    display: none;
+}
+
+.active {
+    display: block;
+    color: red;
+}
+
+.mb-3 {
+    margin: 20px;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+}
